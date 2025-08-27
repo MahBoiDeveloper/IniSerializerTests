@@ -6,8 +6,9 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        TestClass tc = new TestClass();
-        var tmp = IniSerializer.Serialize<TestClass>(tc);
-        Console.WriteLine("Hello, World!");
+        TestClass tc = new();
+        tc.Name = "Hungry";
+        var tmp = IniSerializer.Serialize(tc, IniSerializer.DefaultSerializationOptions with { Section = tc.Name });
+        Console.WriteLine(tmp);
     }
 }
