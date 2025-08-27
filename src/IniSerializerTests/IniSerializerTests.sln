@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36408.4 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IniSerializerTests", "IniSerializerTests.csproj", "{2F070A5F-9118-4158-8F4D-B7785E9DD7B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rampastring.Tools", "..\..\libs\Rampastring.Tools\Rampastring.Tools.csproj", "{6368BA52-91E9-598C-128A-D7EA0B0916E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F070A5F-9118-4158-8F4D-B7785E9DD7B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F070A5F-9118-4158-8F4D-B7785E9DD7B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F070A5F-9118-4158-8F4D-B7785E9DD7B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F070A5F-9118-4158-8F4D-B7785E9DD7B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6368BA52-91E9-598C-128A-D7EA0B0916E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6368BA52-91E9-598C-128A-D7EA0B0916E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6368BA52-91E9-598C-128A-D7EA0B0916E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6368BA52-91E9-598C-128A-D7EA0B0916E1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CC372C49-C79F-4D73-B722-DE455683E0DB}
+	EndGlobalSection
+EndGlobal
