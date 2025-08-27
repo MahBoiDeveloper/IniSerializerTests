@@ -9,4 +9,9 @@ namespace IniSerializerTests;
 public class TestClass
 {
     public string Name {  get; set; }
+    public string Description { get; set; } = "Description";
+    public string Type { get; set; }
+    public string TypeDescription { get; set; } = "Test";
+    public int Id { get; set; } = 0;
+    public bool IsStatic { get; set; } = false;
 }
