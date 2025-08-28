@@ -8,8 +8,15 @@ internal class Program
     {
         TestClass tc = new();
         tc.Name = "Hungry";
-        var options = IniSerializer.DefaultSerializationOptions with { SectionName = tc.Name, WriteEmptyKeys = false, IgnoreProperties = new() { "Name" } };
+        var options = IniSerializer.DefaultSerializationOptions with 
+        { 
+            SectionName = tc.Name, 
+            WriteEmptyKeys = false, 
+            IgnoreProperties = new() { "Name" } 
+        };
         var tmp = IniSerializer.Serialize(tc, options);
         Console.WriteLine(tmp);
+
+        TestClass tc2 = IniSerializer.Deserialize(new IniFile(tmp.ToStream()));
     }
 }
