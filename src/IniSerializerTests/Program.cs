@@ -1,4 +1,5 @@
-﻿using Rampastring.Tools;
+﻿using System;
+using Rampastring.Tools;
 using Rampastring.Tools.Extensions;
 
 namespace IniSerializerTests;

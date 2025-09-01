@@ -10,8 +10,12 @@ namespace IniSerializerTests;
 
 public class ConversionsExtension : Conversions
 {
+    private readonly char[] default_separators = [','];
+
     public new object ValueFromString(string str, Type type)
-    {
-        return base.ValueFromString(str, type);
-    }
+        => type.Name switch
+        {
+            "String[]" => str.Split(default_separators),
+            _ => base.ValueFromString(str, type)
+        };
 }
