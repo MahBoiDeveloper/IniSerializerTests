@@ -12,7 +12,7 @@ public class ConversionsExtension : Conversions
 {
     private readonly char[] default_separators = [','];
 
-    public new object ValueFromString(string str, Type type)
+    public override object ValueFromString(string str, Type type)
         => type.Name switch
         {
             "String[]" => str.Split(default_separators),
