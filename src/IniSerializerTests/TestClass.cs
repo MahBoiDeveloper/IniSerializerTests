@@ -8,7 +8,8 @@ namespace IniSerializerTests;
 
 public class TestClass
 {
-    public string Name {  get; set; }
+    public string[] NamesArray { get; set; }
+    public string Name { get; set; }
     public string Description { get; set; } = "Description";
     public string Type { get; set; }
     public string TypeDescription { get; set; } = "Test";

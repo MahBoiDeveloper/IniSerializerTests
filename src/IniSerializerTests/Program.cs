@@ -7,6 +7,7 @@ internal class Program
 {
     static void Main(string[] args)
     {
+        IniSerializer iniSerializer = new(new ConversionsExtension());
         TestClass tc = new();
         tc.Name = "Hungry";
         
@@ -24,12 +25,13 @@ internal class Program
             IgnoreProperties = new() { "Name" }
         };
 
-        var tmp = IniSerializer.Serialize(tc, ser_options);
+        var tmp = iniSerializer.Serialize(tc);
         
         Console.WriteLine(tmp);
 
-        TestClass? tc2 = IniSerializer.Deserialize<TestClass>(new IniFile(tmp.ToStream()));
+        TestClass? tc2 = iniSerializer.Deserialize<TestClass>(tmp, IniSerializer.DefaultDeserializationOptions with { 
+            SectionName=nameof(TestClass), SkipUnableToParseTypes = false }); 
 
-        Console.WriteLine(IniSerializer.Serialize(tc2));
+        Console.WriteLine(iniSerializer.Serialize(tc2));
     }
 }
