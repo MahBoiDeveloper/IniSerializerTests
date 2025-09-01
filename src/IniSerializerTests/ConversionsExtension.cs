@@ -10,10 +10,6 @@ namespace IniSerializerTests;
 
 public class ConversionsExtension : Conversions
 {
-    public ConversionsExtension()
-    {
-    }
-
     public new object ValueFromString(string str, Type type)
     {
         return base.ValueFromString(str, type);
