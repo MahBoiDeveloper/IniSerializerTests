@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="BenchmarkDotNet" Version="0.15.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Ini" Version="9.0.9" />
   </ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="../../libs/Rampastring.Tools/Rampastring.Tools.csproj" />
